@@ -37,6 +37,10 @@
 #include <QWaitCondition>
 #include <QDir>
 
+#ifndef QCA_PLUGIN_PATH
+#define QCA_PLUGIN_PATH "../lib"
+#endif
+
 #ifdef Q_OS_UNIX
 # include <unistd.h>
 #endif
